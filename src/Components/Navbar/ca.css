@@ -1,0 +1,102 @@
+.exercisecard{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1em;
+}
+.contain{
+    display:flex;
+    width:400px;
+    flex-direction: column;
+    height:500px;
+    gap:0.5em;
+
+    justify-content: center;
+   
+    align-items:center;
+}
+
+.contain:hover{
+    transform:scale(1.1);
+    transition:1s ease;
+}
+.imgcon{
+    width:350px;
+    height:350px;
+
+}
+.imgcon img{
+    width:350px;
+    height:350px;
+    object-fit:contain;
+
+}
+.contain .nam{
+    color:skyblue;
+    font-family:poppins;
+    text-align:center;
+}
+.btns{
+    display:flex;
+    gap:0.6em;
+}
+.btns button{
+    font-family:'hammersmith one';
+   padding:1em;
+   
+    border:2px solid black;
+    border-radius:12px;
+    background:rgb(142, 161, 142);
+    color:black;
+    outline:none;
+}
+.pagination{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:0.4em;
+    flex-wrap:wrap;
+}
+.pagination button{
+    outline:none;
+    width:30px;
+    background:transparent;
+    border:1px solid skyblue;
+    padding:0.3em;
+    color:white;
+    font-family:'poppins';
+margin-bottom:60px;
+}
+.pagination button:hover{
+    box-shadow:0px 0px 5px red;   
+    color:yellow;
+}
+.pagination button.active{
+    border-color:white;
+   box-shadow:0px 0px 5px yellow;
+    color:white;
+}
+.hove:hover{
+    transform:scale(1);
+}
+@media (max-width:414px){
+    .contain{
+        width:350px;
+    }
+}
+@media (max-width:372px){
+    .contain{
+        width:280px;
+    }
+    .imgcon{
+        width:280px;
+        height:280px;
+    
+    }
+    .imgcon img{
+        width:280px;
+        height:280px;
+        object-fit:contain;
+    
+    }
+}

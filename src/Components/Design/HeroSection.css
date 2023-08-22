@@ -1,0 +1,243 @@
+.hero{
+    margin-top:80px;
+    display:flex;
+
+    justify-content: center;
+    gap:8em;
+}
+.herotext{
+    display:flex;
+    flex-direction: column;
+    gap:0.6em;
+}
+.herotext h1{
+    font-family: poppins;
+    color: transparent;
+    font-size: 11rem;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+.herotext h2{
+ color:transparent;
+ margin-top:-60px;
+ -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-size:5rem;
+  font-family:'poppins';
+}
+.herotext p{
+    color:skyblue;
+    font-size:1.3rem;
+    font-family:'poppins';
+    width:20ch;
+}
+.herotext button{
+    background:transparent;
+    outline:none;
+    width:150px;
+    height:40px;
+    padding:0.5em;
+    font-family:'hammersmith one';
+    color:skyblue;
+    font-size:1rem;
+    border:1px solid skyblue;
+    border-radius:0.5em;
+    position: relative;
+}
+.herotext button span{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:0;
+    border-radius:0.5em;
+   background:skyblue;
+    transition:0.3s ease-in;
+}
+.herotext button:hover{
+    color:black;
+    text-shadow:0px 0px 3px;
+}
+.herotext button:hover span{
+    width:150px;
+    height:40px;
+    color:black;
+    z-index:-1;
+}
+.images{
+ display:flex;
+ gap:2em;
+ position: relative;
+}
+.imgcoont{
+    width:300px;
+    height:350px;
+    box-shadow:0px 0px 10px skyblue;
+}
+.imgcoont img{
+    width:300px;
+    height:350px;
+    object-fit: cover;
+
+}
+.img-c2{
+   margin-top:280px;
+   margin-left:-100px;
+
+ 
+}
+.dumbell {
+    position: absolute;
+    font-size: 43rem; 
+    top: -100px;
+    left: -110px;
+    color: skyblue;
+    z-index: -1;
+    text-shadow: 0px 0px 5px skyblue;
+  }
+.dumbell{
+    animation:upDown 6s alternate infinite;
+}
+@keyframes upDown{
+    0%{
+        transform:translateY(-60px);
+    }
+    100%{
+        transform:translateY(60px);
+    }
+}
+@media(max-width:1244px){
+    .hero{
+        gap:3em;
+    }
+}
+@media(max-width:1173px){
+    .herotext{
+        gap:1em;
+    }
+    .dumbell{
+        font-size:30rem;
+        top:50px;
+        left:30px;
+    }
+    .herotext h1{
+        font-size:8rem;
+    }
+    .imgcoont{
+        width:250px;
+        height:300px;
+        box-shadow:0px 0px 10px skyblue;
+    }
+    .imgcoont img{
+        width:250px;
+        height:300px;
+        object-fit: cover;
+    
+    }
+    .img-c2{
+        margin-top:150px;
+        margin-left:-100px;
+     
+      
+     }
+}
+@media (max-width:1010px){
+    .hero{
+        gap:0.1em;
+       justify-content: space-around;
+
+    }
+    .img-c2{
+        display:none;
+    }
+    .dumbell{
+        margin-left:-270px;
+        font-size:8rem;
+        margin-top:180px;
+     animation:upDown 6s infinite alternate;
+}
+
+@keyframes upDown{
+    0%{
+        transform:translateY(-20px);
+    }
+    100%{
+        transform:translateY(20px);
+    }
+}
+}
+@media (max-width:680px){
+.dumbell{
+    margin-left:-200px;
+    margin-top:140px;
+    animation:upDown 6s infinite alternate;
+}
+@keyframes upDown{
+    0%{
+        transform:translateY(-20px);
+    }
+    100%{
+        transform:translateY(20px);
+    }
+}
+.herotext h1{
+    font-size:6rem;
+}
+.herotext h2{
+    font-size:3.5rem;
+}
+}
+@media(max-width:570px){
+    .imgcoont{
+        margin-top:80px;
+        width:180px;
+        height:220px;
+    }
+    .imgcoont img{
+        width:180px;
+        height:220px;
+        object-fit: cover;
+    
+    }
+    .dumbell{
+        font-size:5rem;
+       margin-left:-120px;
+    }
+    .imgcoont{
+        margin-top:80px;
+        width:250px;
+        height:300px;
+    }
+    .imgcoont img{
+        width:250px;
+        height:300px;
+        object-fit: cover;
+    
+    }
+ 
+}
+@media(max-width:550px){
+    .herotext{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dumbell{
+        font-size:5rem;
+        margin-top:-180px;
+        animation:none;
+       margin-left:160px
+    }
+    
+ 
+}
+.cards{
+    display:flex;
+    justify-content: center;
+    margin-top:60px;
+}

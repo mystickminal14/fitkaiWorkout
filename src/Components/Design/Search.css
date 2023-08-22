@@ -1,0 +1,66 @@
+.para{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.quote{
+    text-align: center;
+    color:white;
+    font-family:"poppins";
+    font-size:1.8rem;
+    margin-top:100px;
+    width:30ch;
+}
+.search{
+    margin-top:60px;
+    display:flex;
+width:100%;
+gap:1em;
+justify-content: center;
+align-items: center;
+}
+input[type='text']{
+    padding:0.5em;
+    width:700px;
+    border:2px solid white;
+    box-shadow:0px 0px 4px;
+    border-radius:0.3em;
+    outline:none;
+    
+}
+.search button{
+    width:80px;
+    font-family:'hammersmith one';
+    height:35px;
+    font-size:1rem;
+    background:skyblue;
+    border:2px solid white;
+    box-shadow:0px 0px 4px;
+    border-radius:0.3em;
+;}
+@media(max-width: 805px){
+    input[type='text']{
+        width:400px;
+    }
+}
+@media(max-width: 573px){
+    .quote{
+        font-size:1.2rem;
+    }
+    input[type='text']{
+        width:300px;
+    }
+}
+@media(max-width:429px){
+    input[type='text']{
+        width:250px;
+    }
+}
+@media(max-width:352px){
+    .quote{
+        font-size:1rem;
+    }
+    input[type='text']{
+        width:200px;
+    }
+}
